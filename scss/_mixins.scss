@@ -1,0 +1,25 @@
+@mixin flexbox($direccion, $justify, $aling){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin lettering-style($size: 18px, $weight: 400px, $family:"Arial", $color: $letter-color , $decoration: none, $aling: center){
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+    color: $color;
+    text-decoration: $decoration;
+    text-align: $aling;
+}
+
+@mixin border($border,$radius:0px){
+    border: $border;
+    border-radius: $radius;
+}
+
+@mixin area($height, $width){
+    height: $height;
+    width: $width;
+}
